@@ -1,0 +1,557 @@
+{
+  "total_pois": 17023,
+  "city_totals": {
+    "Chennai": 14447,
+    "Kanchipuram": 897,
+    "Madurai": 1679
+  },
+  "category_totals": {
+    "Transport": 344,
+    "College / University": 291,
+    "Fuel Station": 358,
+    "Hospital": 1234,
+    "Clinic / Healthcare": 1289,
+    "ATM": 524,
+    "Post Office": 77,
+    "Police": 137,
+    "Historic Site": 232,
+    "Restaurant": 969,
+    "Hotel": 648,
+    "Parking": 325,
+    "Fire Station": 17,
+    "Temple": 1407,
+    "Tourist Attraction": 278,
+    "School": 819,
+    "Church": 258,
+    "Shop": 4099,
+    "Bank": 576,
+    "Cinema / Entertainment": 153,
+    "Stadium / Sports": 440,
+    "Street Food / Fast Food": 388,
+    "Veterinary": 13,
+    "Library": 119,
+    "Cafe": 347,
+    "Park": 898,
+    "Mosque": 105,
+    "Museum": 28,
+    "Pharmacy": 324,
+    "Bar / Pub": 44,
+    "Religious Place": 97,
+    "Community Centre": 109,
+    "Market / Shopping": 50,
+    "Gurudwara": 3,
+    "Jain Temple": 15,
+    "Buddhist Temple": 4,
+    "Airport": 4
+  },
+  "missing_name": 3409,
+  "invalid_geom": 0,
+  "duplicates_removed": 35,
+  "summary_rows": [
+    {
+      "city": "Chennai",
+      "category": "ATM",
+      "count": 434
+    },
+    {
+      "city": "Chennai",
+      "category": "Airport",
+      "count": 3
+    },
+    {
+      "city": "Chennai",
+      "category": "Bank",
+      "count": 517
+    },
+    {
+      "city": "Chennai",
+      "category": "Bar / Pub",
+      "count": 41
+    },
+    {
+      "city": "Chennai",
+      "category": "Buddhist Temple",
+      "count": 2
+    },
+    {
+      "city": "Chennai",
+      "category": "Cafe",
+      "count": 319
+    },
+    {
+      "city": "Chennai",
+      "category": "Church",
+      "count": 247
+    },
+    {
+      "city": "Chennai",
+      "category": "Cinema / Entertainment",
+      "count": 129
+    },
+    {
+      "city": "Chennai",
+      "category": "Clinic / Healthcare",
+      "count": 1090
+    },
+    {
+      "city": "Chennai",
+      "category": "College / University",
+      "count": 256
+    },
+    {
+      "city": "Chennai",
+      "category": "Community Centre",
+      "count": 87
+    },
+    {
+      "city": "Chennai",
+      "category": "Fire Station",
+      "count": 16
+    },
+    {
+      "city": "Chennai",
+      "category": "Fuel Station",
+      "count": 300
+    },
+    {
+      "city": "Chennai",
+      "category": "Gurudwara",
+      "count": 3
+    },
+    {
+      "city": "Chennai",
+      "category": "Historic Site",
+      "count": 203
+    },
+    {
+      "city": "Chennai",
+      "category": "Hospital",
+      "count": 960
+    },
+    {
+      "city": "Chennai",
+      "category": "Hotel",
+      "count": 527
+    },
+    {
+      "city": "Chennai",
+      "category": "Jain Temple",
+      "count": 8
+    },
+    {
+      "city": "Chennai",
+      "category": "Library",
+      "count": 108
+    },
+    {
+      "city": "Chennai",
+      "category": "Market / Shopping",
+      "count": 41
+    },
+    {
+      "city": "Chennai",
+      "category": "Mosque",
+      "count": 85
+    },
+    {
+      "city": "Chennai",
+      "category": "Museum",
+      "count": 21
+    },
+    {
+      "city": "Chennai",
+      "category": "Park",
+      "count": 819
+    },
+    {
+      "city": "Chennai",
+      "category": "Parking",
+      "count": 298
+    },
+    {
+      "city": "Chennai",
+      "category": "Pharmacy",
+      "count": 303
+    },
+    {
+      "city": "Chennai",
+      "category": "Police",
+      "count": 125
+    },
+    {
+      "city": "Chennai",
+      "category": "Post Office",
+      "count": 70
+    },
+    {
+      "city": "Chennai",
+      "category": "Religious Place",
+      "count": 66
+    },
+    {
+      "city": "Chennai",
+      "category": "Restaurant",
+      "count": 867
+    },
+    {
+      "city": "Chennai",
+      "category": "School",
+      "count": 741
+    },
+    {
+      "city": "Chennai",
+      "category": "Shop",
+      "count": 3690
+    },
+    {
+      "city": "Chennai",
+      "category": "Stadium / Sports",
+      "count": 419
+    },
+    {
+      "city": "Chennai",
+      "category": "Street Food / Fast Food",
+      "count": 362
+    },
+    {
+      "city": "Chennai",
+      "category": "Temple",
+      "count": 716
+    },
+    {
+      "city": "Chennai",
+      "category": "Tourist Attraction",
+      "count": 250
+    },
+    {
+      "city": "Chennai",
+      "category": "Transport",
+      "count": 314
+    },
+    {
+      "city": "Chennai",
+      "category": "Veterinary",
+      "count": 10
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "ATM",
+      "count": 14
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Bank",
+      "count": 6
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Buddhist Temple",
+      "count": 2
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Cafe",
+      "count": 2
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Church",
+      "count": 2
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Cinema / Entertainment",
+      "count": 5
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Clinic / Healthcare",
+      "count": 54
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "College / University",
+      "count": 4
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Community Centre",
+      "count": 9
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Fuel Station",
+      "count": 16
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Historic Site",
+      "count": 2
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Hospital",
+      "count": 34
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Hotel",
+      "count": 6
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Jain Temple",
+      "count": 5
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Library",
+      "count": 4
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Mosque",
+      "count": 5
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Museum",
+      "count": 1
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Park",
+      "count": 20
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Parking",
+      "count": 5
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Pharmacy",
+      "count": 5
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Police",
+      "count": 4
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Religious Place",
+      "count": 20
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Restaurant",
+      "count": 9
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "School",
+      "count": 28
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Shop",
+      "count": 37
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Stadium / Sports",
+      "count": 3
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Street Food / Fast Food",
+      "count": 5
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Temple",
+      "count": 586
+    },
+    {
+      "city": "Kanchipuram",
+      "category": "Transport",
+      "count": 4
+    },
+    {
+      "city": "Madurai",
+      "category": "ATM",
+      "count": 76
+    },
+    {
+      "city": "Madurai",
+      "category": "Airport",
+      "count": 1
+    },
+    {
+      "city": "Madurai",
+      "category": "Bank",
+      "count": 53
+    },
+    {
+      "city": "Madurai",
+      "category": "Bar / Pub",
+      "count": 3
+    },
+    {
+      "city": "Madurai",
+      "category": "Cafe",
+      "count": 26
+    },
+    {
+      "city": "Madurai",
+      "category": "Church",
+      "count": 9
+    },
+    {
+      "city": "Madurai",
+      "category": "Cinema / Entertainment",
+      "count": 19
+    },
+    {
+      "city": "Madurai",
+      "category": "Clinic / Healthcare",
+      "count": 145
+    },
+    {
+      "city": "Madurai",
+      "category": "College / University",
+      "count": 31
+    },
+    {
+      "city": "Madurai",
+      "category": "Community Centre",
+      "count": 13
+    },
+    {
+      "city": "Madurai",
+      "category": "Fire Station",
+      "count": 1
+    },
+    {
+      "city": "Madurai",
+      "category": "Fuel Station",
+      "count": 42
+    },
+    {
+      "city": "Madurai",
+      "category": "Historic Site",
+      "count": 27
+    },
+    {
+      "city": "Madurai",
+      "category": "Hospital",
+      "count": 240
+    },
+    {
+      "city": "Madurai",
+      "category": "Hotel",
+      "count": 115
+    },
+    {
+      "city": "Madurai",
+      "category": "Jain Temple",
+      "count": 2
+    },
+    {
+      "city": "Madurai",
+      "category": "Library",
+      "count": 7
+    },
+    {
+      "city": "Madurai",
+      "category": "Market / Shopping",
+      "count": 9
+    },
+    {
+      "city": "Madurai",
+      "category": "Mosque",
+      "count": 15
+    },
+    {
+      "city": "Madurai",
+      "category": "Museum",
+      "count": 6
+    },
+    {
+      "city": "Madurai",
+      "category": "Park",
+      "count": 59
+    },
+    {
+      "city": "Madurai",
+      "category": "Parking",
+      "count": 22
+    },
+    {
+      "city": "Madurai",
+      "category": "Pharmacy",
+      "count": 16
+    },
+    {
+      "city": "Madurai",
+      "category": "Police",
+      "count": 8
+    },
+    {
+      "city": "Madurai",
+      "category": "Post Office",
+      "count": 7
+    },
+    {
+      "city": "Madurai",
+      "category": "Religious Place",
+      "count": 11
+    },
+    {
+      "city": "Madurai",
+      "category": "Restaurant",
+      "count": 93
+    },
+    {
+      "city": "Madurai",
+      "category": "School",
+      "count": 50
+    },
+    {
+      "city": "Madurai",
+      "category": "Shop",
+      "count": 372
+    },
+    {
+      "city": "Madurai",
+      "category": "Stadium / Sports",
+      "count": 18
+    },
+    {
+      "city": "Madurai",
+      "category": "Street Food / Fast Food",
+      "count": 21
+    },
+    {
+      "city": "Madurai",
+      "category": "Temple",
+      "count": 105
+    },
+    {
+      "city": "Madurai",
+      "category": "Tourist Attraction",
+      "count": 28
+    },
+    {
+      "city": "Madurai",
+      "category": "Transport",
+      "count": 26
+    },
+    {
+      "city": "Madurai",
+      "category": "Veterinary",
+      "count": 3
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "passed": [
+    "[OK] PBF intact: 129,636,304 bytes (129,636,304 expected)",
+    "[OK] chennai_pois.geojson exists (11,727,183 bytes)",
+    "[OK] kanchipuram_pois.geojson exists (749,377 bytes)",
+    "[OK] madurai_pois.geojson exists (1,383,062 bytes)",
+    "[OK] geoguide_pois.csv exists (1,946,099 bytes)",
+    "[OK] chennai_pois.geojson: 14,447 features, valid GeoJSON",
+    "[OK] chennai_pois.geojson: all coordinates within Chennai bounds",
+    "[OK] chennai_pois.geojson: all features have coordinates",
+    "[OK] chennai_pois.geojson: all features have category values",
+    "[OK] kanchipuram_pois.geojson: 897 features, valid GeoJSON",
+    "[OK] kanchipuram_pois.geojson: all coordinates within Kanchipuram bounds",
+    "[OK] kanchipuram_pois.geojson: all features have coordinates",
+    "[OK] kanchipuram_pois.geojson: all features have category values",
+    "[OK] madurai_pois.geojson: 1,679 features, valid GeoJSON",
+    "[OK] madurai_pois.geojson: all coordinates within Madurai bounds",
+    "[OK] madurai_pois.geojson: all features have coordinates",
+    "[OK] madurai_pois.geojson: all features have category values",
+    "[OK] geoguide_pois.csv: 17,023 rows, readable",
+    "[OK] CSV: Chennai present with 14,447 rows",
+    "[OK] CSV: Kanchipuram present with 897 rows",
+    "[OK] CSV: Madurai present with 1,679 rows",
+    "[OK] GeoJSON total (17,023) matches CSV total (17,023)"
+  ],
+  "warnings": [],
+  "errors": [],
+  "overall": "PASS"
+}

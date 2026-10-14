@@ -1,0 +1,23 @@
+import { KeyRound, Mail, MapPinned, Save, UserRound } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { api, getApiError } from '../services/api';
+import { useUser } from '../context/UserContext';
+
+const PREFERENCE_CATEGORIES = ['Temple', 'Restaurant', 'Cafe', 'Hospital', 'Hotel', 'Market / Shopping', 'Park', 'Tourist Attraction', 'Transport'];
+
+export default function Profile() {
+  const { user, loading: authLoading } = useUser();
+  const [name, setName] = useState('');
+  const [preferences, setPreferences] = useState([]);
+  const [stats, setStats] = useState({ favorites: 0, reviews: 0, searches: 0, ratings: 0 });
+  const [passwords, setPasswords] = useState({ currentPassword: '', newPassword: '' });
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+  useEffect(() => { if (user) { setName(user.name); api.getDashboard().then((data) => { setStats(data.result.stats); setPreferences(data.result.preferences.categories || []); }).catch((requestError) => setError(getApiError(requestError))); } }, [user]);
+  if (authLoading || !user) return null;
+  const saveProfile = async (event) => { event.preventDefault(); setError(''); setMessage(''); try { const data = await api.updateProfile(name); setName(data.user.name); setMessage('Profile updated.'); } catch (requestError) { setError(getApiError(requestError, 'Profile could not be updated.')); } };
+  const savePreferences = async () => { setError(''); setMessage(''); try { await api.updatePreferences(preferences); setMessage('Preferences saved.'); } catch (requestError) { setError(getApiError(requestError, 'Preferences could not be saved.')); } };
+  const changePassword = async (event) => { event.preventDefault(); setError(''); setMessage(''); try { await api.changePassword(passwords.currentPassword, passwords.newPassword); setPasswords({ currentPassword: '', newPassword: '' }); setMessage('Password changed successfully.'); } catch (requestError) { setError(getApiError(requestError, 'Password could not be changed.')); } };
+  const togglePreference = (category) => setPreferences((current) => current.includes(category) ? current.filter((item) => item !== category) : [...current, category]);
+  return <div><div className="page-heading"><span className="kicker">Account space</span><h1>Your profile</h1><p>Manage your account, preferences, and activity.</p></div>{error && <div className="alert error">{error}</div>}{message && <div className="alert success">{message}</div>}<div className="dashboard-stats">{[['Favorites', stats.favorites], ['Reviews', stats.reviews], ['Searches', stats.searches], ['Ratings', stats.ratings]].map(([label, value]) => <div className="stat-item" key={label}><strong>{value}</strong><span>{label}</span></div>)}</div><div className="account-grid"><section className="profile-card"><div className="profile-avatar"><UserRound size={32} /></div><div className="profile-info"><span className="demo-badge">AUTHENTICATED USER</span><h2>{user.name}</h2><p><Mail size={16} />{user.email}</p><p><MapPinned size={16} />Your activity is secured by GeoGuide.</p></div></section><form className="detail-panel account-form" onSubmit={saveProfile}><h2>Profile details</h2><label>Name<input value={name} onChange={(event) => setName(event.target.value)} required /></label><label>Email<input value={user.email} readOnly /></label><button className="primary-button" type="submit"><Save size={16} />Save profile</button></form><section className="detail-panel account-form"><h2>Preferred categories</h2><p className="muted">Choose categories for personalized discovery.</p><div className="preference-checks">{PREFERENCE_CATEGORIES.map((category) => <label key={category}><input type="checkbox" checked={preferences.includes(category)} onChange={() => togglePreference(category)} />{category}</label>)}</div><button className="primary-button" type="button" onClick={savePreferences}><Save size={16} />Save preferences</button></section><form className="detail-panel account-form" onSubmit={changePassword}><h2>Change password</h2><label>Current password<input type="password" value={passwords.currentPassword} onChange={(event) => setPasswords({ ...passwords, currentPassword: event.target.value })} autoComplete="current-password" required /></label><label>New password<input type="password" value={passwords.newPassword} onChange={(event) => setPasswords({ ...passwords, newPassword: event.target.value })} minLength="8" autoComplete="new-password" required /></label><button className="outline-button" type="submit"><KeyRound size={16} />Change password</button></form></div></div>;
+}
